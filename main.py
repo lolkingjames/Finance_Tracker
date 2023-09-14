@@ -8,8 +8,8 @@ from matplotlib import pyplot as plt
 ticker = input('Stock Name: ')
 data = yf.download(ticker, start='2021-01-01', end=date.today())
 x = ticker.upper()
-# Get Stock chart using pyplot
 
+# Get Stock chart using pyplot
 plt.figure(figsize=(15,5))
 plt.plot(data['Close'])
 plt.title(f'{x} Stock Price Chart')
